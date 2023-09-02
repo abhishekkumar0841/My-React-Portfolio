@@ -1,0 +1,23 @@
+@import '../../global.scss';
+
+.card{
+    box-shadow: 2px 1px 12px 1px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    font-size: 6rem;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: $mainColor;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover{
+        background: white;
+        color: $mainColor;
+        transform: scale(1.05);
+    }
+}

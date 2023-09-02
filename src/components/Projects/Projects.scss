@@ -1,0 +1,44 @@
+.projects{
+    background: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .slider{
+        height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        border: 2px solid yellow;
+        
+        .container{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid green;
+
+            .item{
+                width: 700px;
+                height: 100%;
+                background: white;
+                border-radius: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .left{
+                    flex: 4;
+                    height: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .right{
+                    flex: 8;
+                }
+            }
+        }
+    }
+}
