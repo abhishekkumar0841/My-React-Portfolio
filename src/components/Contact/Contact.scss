@@ -1,3 +1,146 @@
-.contact{
-    background: lightblue;
+@import "../../global.scss";
+
+.contact {
+  position: relative;
+  display: flex;
+  padding: 1rem 2rem;
+
+  @include mobile {
+    flex-direction: column;
+    height: auto !important;
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 500px;
+      width: 600px;
+
+      @include mobile {
+        height: auto;
+        width: auto;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    border: 3px solid $mainColor;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    >p{
+      text-align: center;
+      font-weight: bold;
+      color:  green;
+    }
+
+    h1 {
+      text-align: center;
+
+      @include mobile {
+        font-size: 24px;
+        margin: -10px 0;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      font-size: 1.5rem;
+
+      @include mobile {
+        font-size: 1rem;
+        padding: 0.5rem;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.8rem;
+
+        textarea {
+          resize: none;
+        }
+
+        p {
+          margin-bottom: 0.5rem;
+
+          @include mobile {
+            font-size: 18px;
+            margin-bottom: 0.2rem;
+          }
+        }
+
+        input,
+        textarea {
+          padding: 0.6rem 1rem;
+          width: 100%;
+          font-size: 1.2rem;
+          border: 1px solid black;
+
+          @include mobile {
+            font-size: 0.8rem;
+            padding: 0.4rem 1rem;
+          }
+
+          &:focus {
+            outline: none;
+            border: 3px solid skyblue;
+            border-radius: 8px;
+          }
+        }
+      }
+
+      button {
+        padding: 0.5rem 2rem;
+        font-size: 1.5rem;
+        background: $mainColor;
+        color: white;
+        border: none;
+        outline: none;
+        transition: all 0.3s ease;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        @include mobile {
+          font-size: 1rem;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .upArrow {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    font-size: 3rem;
+    cursor: pointer;
+
+    @include mobile {
+      bottom: 0;
+      left: 88%;
+      font-size: 2rem;
+    }
+
+    a {
+      color: $mainColor;
+    }
+
+    animation: upAndDown 1s infinite;
+
+    @keyframes upAndDown {
+      50% {
+        bottom: 10px;
+      }
+    }
+  }
 }

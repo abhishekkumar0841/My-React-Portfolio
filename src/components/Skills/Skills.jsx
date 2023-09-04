@@ -5,10 +5,11 @@ import {AiOutlineHtml5} from 'react-icons/ai'
 import {BiLogoCss3} from 'react-icons/bi'
 import {BiLogoTailwindCss} from 'react-icons/bi'
 import {SiMysql, SiRedux} from 'react-icons/si'
-import {FaBootstrap} from 'react-icons/fa'
+import {FaBootstrap, FaSass} from 'react-icons/fa'
 import {TbBrandJavascript} from 'react-icons/tb'
 import {GrReactjs} from 'react-icons/gr'
 import {BsGit, BsGithub} from 'react-icons/bs'
+import {SiMongodb} from 'react-icons/si'
 
 const Skills = () => {
 
@@ -23,6 +24,8 @@ const Skills = () => {
         {id:8, icon: <SiMysql/>},
         {id:9, icon: <BsGithub/>},
         {id:10, icon: <BsGit/>},
+        {id:11, icon: <FaSass/>},
+        {id:12, icon: <SiMongodb/>},
     ]
 
   return (

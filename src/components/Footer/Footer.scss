@@ -1,0 +1,106 @@
+@import "../../global.scss";
+
+.footer {
+  background: $mainColor;
+  margin-top: 2rem;
+  height: 20rem !important;
+  border-top-right-radius: 600px;
+  border-top-left-radius: 600px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 2rem;
+     height: auto !important;
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // border: 1px solid white;
+
+    .logo {
+      font-size: 4rem;
+      border-bottom: 4px solid white;
+
+      @include mobile{
+        font-size: 2rem;
+        overflow: hidden;
+      }
+    }
+
+    .address {
+      font-size: 20px;
+      margin-top: 0.5rem;
+
+      @include mobile{
+        font-size: 16px;
+        text-align: center;
+      }
+
+      > p {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    >.firstLine {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 20px;
+
+      @include mobile{
+        font-size: 16px;
+      }
+
+      .items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > * {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .secondLine {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      font-size: 1.8rem;
+      overflow: hidden;
+      padding: 1rem;
+
+      a {
+        color: white;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}

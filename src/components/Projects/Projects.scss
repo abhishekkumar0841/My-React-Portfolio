@@ -1,34 +1,20 @@
-.projects{
-    width: 100vw;
-    height: 100%;
-    border: 2px solid blue;
+@import '../../global.scss';
 
-    h1{
-        font-size: 30px;
-        text-align: center;
+.carousel{
+    // border: 5px solid red;
+    text-align: center;
+
+    .react-multi-carousel-dot-list {
+        @include mobile{
+            bottom: 30px;
+        }
     }
 
-    .projectContainer{
-        height: 80%;
-        border: 1px solid black;
-        margin-top: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
+    .react-multi-carousel-track {
+        // border: 2px solid gray;
+    }
 
-        .leftArrow{
-            position: absolute;
-            left: 10%;
-            font-size: 3rem;
-            cursor: pointer;
-        }
-        .rightArrow{
-            position: absolute;
-            right: 10%;
-            font-size: 3rem;
-            cursor: pointer;
-        }
+    .react-multi-carousel-dot {
+        margin-bottom: 0.5rem;
     }
 }

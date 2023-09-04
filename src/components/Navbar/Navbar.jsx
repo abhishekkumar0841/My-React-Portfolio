@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-import { BsPersonCircle } from "react-icons/bs";
+import { FiPhoneCall } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
 
 const Navbar = ({ menuOpen, setMenuOpen }) => {
@@ -12,12 +12,12 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
             AK.io
           </a>
           <div className="itemContainer">
-            <BsPersonCircle className="icon" />
-            <span>+88 45 78</span>
+            <FiPhoneCall className="icon" />
+            <span>9525771466</span>
           </div>
           <div className="itemContainer">
             <FiMail className="icon" />
-            <span>abhishekkumar@gmail.com</span>
+            <span>abhishekkumar0841@gmail.com</span>
           </div>
         </div>
         <div className="right">

@@ -3,6 +3,7 @@ import "./Intro.scss";
 import man from "../../images/man.png";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { init } from "ityped";
+import myResume from '../../components/Intro/Abhishek Resume july.pdf';
 
 const Intro = () => {
   const textRef = useRef();
@@ -12,7 +13,7 @@ const Intro = () => {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 30,
-      strings: ["Web Developer", "and", "Designer"],
+      strings: ["Web Developer", "&", "Designer"],
     });
   }, []);
 
@@ -30,9 +31,17 @@ const Intro = () => {
           <h3>
             A Passionate.. <span ref={textRef}></span>{" "}
           </h3>
+          <div className="buttons">
+            <a href="#contact">
+            <button>Hire Me</button>
+            </a>
+            <a href={myResume} download>
+            <button>Download CV</button>
+            </a>
+          </div>
         </div>
-        <a href="#skills">
-          <AiOutlineArrowDown className="downArrow" />
+        <a href="#skills" className="downArrow">
+          <AiOutlineArrowDown className="downArrowIcon" />
         </a>
       </div>
     </div>
