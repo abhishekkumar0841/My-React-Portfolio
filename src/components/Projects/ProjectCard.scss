@@ -103,16 +103,6 @@
 
         a{
             text-decoration: none;
-            color: white;
-            background: $mainColor;
-            padding: 0.5rem 1rem;
-            border-radius: 10px;
-            width: 200px;
-            transition: all 0.2s ease;
-
-            &:hover{
-                background: rgb(65, 15, 130);
-            }
         }
     }
 }

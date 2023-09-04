@@ -4,6 +4,7 @@ import man from "../../images/man.png";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { init } from "ityped";
 import myResume from '../../components/Intro/Abhishek Resume july.pdf';
+import Button from "../Button/Button";
 
 const Intro = () => {
   const textRef = useRef();
@@ -33,10 +34,11 @@ const Intro = () => {
           </h3>
           <div className="buttons">
             <a href="#contact">
-            <button>Hire Me</button>
+            {/* <button>Hire Me</button> */}
+            <Button text="Hire Me" />
             </a>
             <a href={myResume} download>
-            <button>Download CV</button>
+            <Button text="Download CV" />
             </a>
           </div>
         </div>

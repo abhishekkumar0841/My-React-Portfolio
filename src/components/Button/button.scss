@@ -1,0 +1,35 @@
+@import "../../global.scss";
+
+.button{
+  background: crimson;
+  color: white;
+  border: 2px solid $mainColor;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0.8rem 2.3rem;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 8px;
+
+  &::before{
+    content: "";
+    background: $mainColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.8s;
+    z-index: -1;
+
+  }
+
+  &:hover::before{
+    transform: scaleX(1);
+  }
+}
+
+

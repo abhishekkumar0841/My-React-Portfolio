@@ -1,8 +1,10 @@
 @import '../../global.scss';
 
-.carousel{
-    // border: 5px solid red;
+.react-multi-carousel-list{
+    border: 5px solid red;
     text-align: center;
+    // padding: 20px 0 0 0;
+    align-items: start;
 
     .react-multi-carousel-dot-list {
         @include mobile{
@@ -10,11 +12,11 @@
         }
     }
 
-    .react-multi-carousel-track {
-        // border: 2px solid gray;
-    }
-
     .react-multi-carousel-dot {
         margin-bottom: 0.5rem;
+    }
+
+    .react-multiple-carousel__arrow{
+        z-index: 10;
     }
 }

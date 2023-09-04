@@ -28,7 +28,7 @@ const responsive = {
 
 const Projects = () => {
   return (
-    <Carousel responsive={responsive} className="carousel" showDots={true}  >
+    <Carousel responsive={responsive} className="carousel" showDots={true} >
         {
           projectsData.map((project)=>(
             <ProjectCard key={project.id} project={project} />

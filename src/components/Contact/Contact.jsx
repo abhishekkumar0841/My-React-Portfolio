@@ -3,6 +3,7 @@ import './Contact.scss'
 import contactUsImg from '../../images/contact-us.png'
 import {BsFillArrowUpCircleFill} from 'react-icons/bs'
 import emailjs from "@emailjs/browser";
+import Button from '../Button/Button';
 
 const Contact = () => {
 
@@ -73,7 +74,8 @@ const Contact = () => {
           <label><p>Write Your Message Below:</p>
             <textarea name="message" cols="30" rows="8" placeholder='Write Your Message Here...' value={textInput.message} onChange={changeHandler}></textarea>
           </label>
-          <button>Submit</button>
+          {/* <button>Submit</button> */}
+          <Button text="Submit" />
         </form>
         {
           contacted && <p>** Thanks for contacting me , I replay ASAP **</p>
