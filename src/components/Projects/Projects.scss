@@ -1,14 +1,11 @@
 @import '../../global.scss';
 
 .react-multi-carousel-list{
-    border: 5px solid red;
     text-align: center;
-    // padding: 20px 0 0 0;
-    align-items: start;
 
     .react-multi-carousel-dot-list {
         @include mobile{
-            bottom: 30px;
+            top: 4%;
         }
     }
 

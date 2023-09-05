@@ -11,12 +11,7 @@ const ProjectCard = ({ project }) => {
       <div className="parent">
         <img src={project.image} alt="Project" />
         <div className="showOnHover">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-          doloremque harum impedit commodi possimus esse odio sed, eligendi
-          nesciunt quos! Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Dolores, ipsam optio mollitia quo ex eligendi vero
-          necessitatibus consequuntur recusandae nemo tempora sunt saepe laborum
-          quod incidunt dolorum nobis tempore. Libero?
+          { project.description }
         </div>
       </div>
       <div className="links">
