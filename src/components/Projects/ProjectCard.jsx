@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
         ..Project {project.id}.. <span>{project.title} </span>{" "}
       </h1>
       <div className="parent">
-        <img src={project.image} alt="Project" />
+        <img src={project.image} alt="Project" loading="lazy"/>
         <div className="showOnHover">
           { project.description }
         </div>
